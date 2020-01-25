@@ -27,7 +27,7 @@
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-        $("#sub").parent().css('color', 'red');
+        $("#sub > li:eq(2)").siblings().css('color', 'red');
       });
     </script>
 </body>
