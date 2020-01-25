@@ -8,8 +8,11 @@
     <p>jQueryの練習</p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+      // $(document).ready(function(){
       $(function(){
-        $('p').css('color', 'red');
+          // セレクタ：処理対象となる対象となるDOM要素を指定する記法
+          // メソッド：処理
+        $('p').css('color', 'red').hide('slow');
       });
     </script>
 </body>
