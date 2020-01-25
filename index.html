@@ -6,6 +6,7 @@
 </head>
 <body>
     <p>jQueryの練習</p>
+    <p><a href="http://google.com">Google</a></p>
     <ul id="main">
         <li>0</li>
         <li class="item">1</li>
@@ -27,7 +28,7 @@
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-        $("#sub > li:eq(2)").siblings().css('color', 'red');
+        $('a[href="http://google.com"]').css('background', 'red');
       });
     </script>
 </body>
