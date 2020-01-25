@@ -3,6 +3,12 @@
 <head>
     <meta charset ="utf-8">
     <title>jQueryの練習</title>
+    <style>
+      .mystyle {
+        border:5px solid green;
+        font-size:48px;
+      }
+    </style>
 </head>
 <body>
     <p>jQueryの練習</p>
@@ -28,7 +34,7 @@
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-        $('a[href="http://google.com"]').css('background', 'red');
+        $('p').addClass('mystyle')
       });
     </script>
 </body>
