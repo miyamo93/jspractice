@@ -28,13 +28,15 @@
             </ul>
         </li>
     </ul>
+    <input type="text" value="hello">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
       // $(document).ready(function(){
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-          $('p').html('<a href="">click me!</a>');
+          console.log($('input').val());
+          $('input').val('hello, again!');
       });
     </script>
 </body>
