@@ -12,7 +12,7 @@
 </head>
 <body>
     <p>jQueryの練習</p>
-    <p><a href="http://google.com">Google</a></p>
+    <p><a href="http://google.com" data-sitename= "maamma">Google</a></p>
     <ul id="main">
         <li>0</li>
         <li class="item">1</li>
@@ -34,8 +34,7 @@
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-        console.log($('a').attr('href',));
-        $('a').attr('href', 'http://google.co.jp');
+        　console.log($('a').data('sitename'));
       });
     </script>
 </body>
