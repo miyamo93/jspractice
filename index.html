@@ -28,7 +28,12 @@
             </ul>
         </li>
     </ul>
-    <input type="text" value="hello">
+    <input type="text" id="name">
+    <select name="members" id="members">
+      <option>taguchi</option>
+      <option>fkoji</option>
+      <option>dotinstall</option>>
+    </select>
     <div id="box" style="width:100px;height: 100px;background: red;"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
@@ -36,15 +41,12 @@
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-          $('#box').click(function(){
-            $('#box').fadeOut(800)
-          });
-          $('#box')
-            .mouseover(function(){
-            $(this).css('background', 'blue');
-            })
-            .mousemove(function(e){
-            $(this).text(e.pageX);
+          $('#name')
+            .focus(function(){
+            $(this).css('background', 'red')
+          })
+            .blur(function(){
+            $(this).css('background', 'white')
           });
       });
     </script>
