@@ -42,12 +42,16 @@
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
           $('#name')
-            .focus(function(){
-            $(this).css('background', 'red')
+              .focus(function(){
+              $(this).css('background', 'red')
+            })
+              .blur(function(){
+              $(this).css('background', 'white')
+            });
+          $('#members').change(function(){
+            alert('changed!');
           })
-            .blur(function(){
-            $(this).css('background', 'white')
-          });
+
       });
     </script>
 </body>
