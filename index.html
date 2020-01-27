@@ -29,15 +29,14 @@
         </li>
     </ul>
     <input type="text" value="hello">
+    <div id="box" style="width:100px;height: 100px;background: red;"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
       // $(document).ready(function(){
       $(function(){
           // セレクタ：処理対象となる対象となるDOM要素を指定する記法
           // メソッド：処理
-          var li = $('<li>').text('just added');
-          $('ul').prepend(li);
-
+          $('#box').hide(800)
       });
     </script>
 </body>
