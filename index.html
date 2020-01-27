@@ -39,8 +39,12 @@
           $('#box').click(function(){
             $('#box').fadeOut(800)
           });
-          $('#box').mouseover(function(){
-            $(this).css('background', 'blue')
+          $('#box')
+            .mouseover(function(){
+            $(this).css('background', 'blue');
+            })
+            .mousemove(function(e){
+            $(this).text(e.pageX);
           });
       });
     </script>
