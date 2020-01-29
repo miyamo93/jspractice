@@ -1,57 +1,24 @@
-<!DOCKTYPE html>
-<html lang ="ja">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset ="utf-8">
-    <title>jQueryの練習</title>
+    <meta charset="utf-8">
+    <title>JavaScript Practice</title>
     <style>
-      .mystyle {
-        border:5px solid green;
-        font-size:48px;
+      .box {
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+        cursor: pointer;
       }
     </style>
 </head>
 <body>
-    <p>jQueryの練習</p>
-    <p><a href="http://google.com" data-sitename= "maamma">Google</a></p>
-    <ul id="main">
-        <li>0</li>
-        <li class="item">1</li>
-        <li class="item">2</li>
-        <li>
-            3
-            <ul id="sub">
-              <li>3-0</li>
-              <li>3-1</li>
-              <li class ="item">3-2</li>
-              <li class ="item">3-3</li>
-              <li>3-4</li>
-            </ul>
-        </li>
-    </ul>
-    <input type="text" id="name">
-    <select name="members" id="members">
-      <option>taguchi</option>
-      <option>fkoji</option>
-      <option>dotinstall</option>>
-    </select>
-    <button>add!</button>
-    <div id="box" style="width:100px;height: 100px;background: red;"></div>
-    <p>
-      <input type="text" name="name" id="name">
-      <input type="button" value="Greet" id="Greet">
-    </p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      // $(document).ready(function(){
-      $(function(){
-          // セレクタ：処理対象となる対象となるDOM要素を指定する記法
-          // メソッド：処理
-          $('#greet').click(function(){
-            $.get('', {},function(){
-
-            });
-          })
-      });
-    </script>
+  <div class="box" id=target></div>
+  <script>
+    'use strict'
+    document.getElementById('target').addEventListener('click', () =>{
+      document.getElementById('target').style.background ='pink';
+    });
+  </script>
 </body>
 </html>
