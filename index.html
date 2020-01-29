@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -6,16 +6,41 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <div id="app">
+  <div id="app" class="container">
+    <h1>My Todos</h1>
     <ul>
-      <!-- <li>{{ todos[0] }}</li>
-      <li>{{ todos[1] }}</li>
-      <li>{{ todos[2] }}</li> -->
       <li v-for="todo in todos"> {{ todo }}</li>
     </ul>
+    <form>
+      <input type="text">
+      <input type="submit" value="Add">
+    </form>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/main.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>React Practice</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"> </div>
+    <script type="text/babel">
+      (() =>{
+        ReactDOM.render(
+          
+        );
+      })();
+    </script>
+  </body>
 </html>
